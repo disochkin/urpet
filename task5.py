@@ -14,3 +14,6 @@ if __name__ == '__main__':
         print(f'Число {input_number} является степенью 2')
     else:
         print(f'Число {input_number} не является степенью 2')
+
+# input_number - с плавающей запятой
+# is_power_of_two - логический тип

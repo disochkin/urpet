@@ -1,13 +1,15 @@
-import math
+def get_digit_count(row):
+    only_digit = input_row.replace('.', '').replace('-', '')
+    return len(only_digit)
+
 
 if __name__ == '__main__':
-    input_number = input('Введите число: ')
-    try:
-        positive_number = abs(int(input_number))
-        digits = 1 + math.floor(math.log10(positive_number))
-        print(f'Кол-во цифр в записи числа: {digits}')
-    except ValueError:
-        if not input_number:
-            raise ValueError('Пустая строка!')
-        else:
-            raise ValueError(f'Строка "{input_number}" не является числом!')
+    input_row = input('Введите число: ')
+    digits_count = get_digit_count(input_row)
+    print(f'Кол-во цифр в записи числа: {digits_count}')
+
+
+# input_row - строковый тип
+# only_digit - строковый тип
+# digits_count - целочисленный тип
+

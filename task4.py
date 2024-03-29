@@ -25,9 +25,13 @@ if __name__ == '__main__':
     number_array = list()
     number_array_length = int(input('Введите кол-во цифр: '))
     for i in range(1, number_array_length+1):
-        new_item = input(f'Введите элемент {i} из {number_array_length}: ')
-        number_array.append(float(new_item))
-
-
-
+        new_item = float(input(f'Введите элемент {i} из {number_array_length}: '))
+        number_array.append(new_item)
     print(get_swapped_min_max_array(number_array))
+
+# number_array - список
+# number_array_length - целочисленный тип
+# new_item - с плавающей запятой
+# index_of_min_item - целочисленный тип
+# index_of_max_item - целочисленный тип
+
